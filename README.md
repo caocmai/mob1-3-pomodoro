@@ -8,7 +8,7 @@ The purpose of this tutorial is to learn about how to pass data using Notificati
 * Pomodoro Screen - displays the coundown time for each pomodoro cycle and breaks
 
 ### App Screenshots
-![](images/image1.png)![](images/image2.png)![](images/image3.png)
+![](images/image2.png) ![](images/image2.png) ![](images/image3.png)
 
 ### Run Locally
 
