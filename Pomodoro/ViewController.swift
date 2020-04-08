@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Pomodoro
 //
-//  Created by Adriana González Martínez on 1/16/19.
+//  Created by Adriana González Martínez, Cao Mai on 1/16/19.
 //  Copyright © 2019 Adriana González Martínez. All rights reserved.
 //
 
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     var currentInterval = 0
     
     // Setting the duration of each type of interval in seconds, for testing purposes they are short.
-    let pomodoroDuration = 5 // Real: 25 * 60
+    let pomodoroDuration = 25 // Real: 25 * 60
     let breakDuration = 3 //Real:  5 * 60
     
     var timeRemaining = 0

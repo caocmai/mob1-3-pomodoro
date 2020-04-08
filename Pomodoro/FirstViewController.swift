@@ -2,7 +2,7 @@
 //  FirstViewController.swift
 //  Pomodoro
 //
-//  Created by Adriana González Martínez on 1/16/19.
+//  Created by Adriana González Martínez, Cao Mai on 1/16/19.
 //  Copyright © 2019 Adriana González Martínez. All rights reserved.
 //  Initial app found here www.globalnerdy.com/2017/06/28/the-code-for-tampa-ios-meetups-pomodoro-timer-exercise
 
