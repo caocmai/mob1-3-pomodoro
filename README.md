@@ -1,5 +1,5 @@
-# Mob1.3 Pomodoro Exercise
-Mob1.3 exercise on passing completed Pomodoro cycles using the Swift's NotificationCenter. 
+# MOB1.3 Pomodoro Exercise
+Mobile 1.3 exercise on passing completed Pomodoro cycles using the Swift's NotificationCenter. 
 
 ## About
 The purpose of this exercise is to learn about how to pass data using NotificationCenter in Swift. The completed cycles of the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) is passed back to the home screen in this exercise.
