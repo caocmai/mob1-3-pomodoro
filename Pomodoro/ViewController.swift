@@ -26,8 +26,8 @@ class ViewController: UIViewController {
     var currentInterval = 0
     
     // Setting the duration of each type of interval in seconds, for testing purposes they are short.
-    let pomodoroDuration = 3 // Real: 25 * 60
-    let breakDuration = 2 //Real:  5 * 60
+    let pomodoroDuration = 5 // Real: 25 * 60
+    let breakDuration = 3 //Real:  5 * 60
     
     var timeRemaining = 0
     
@@ -69,12 +69,13 @@ class ViewController: UIViewController {
         let min = formatNumber(minutes)
         let sec = formatNumber(seconds)
         timeLabel.text = "\(min) : \(sec)"
+        print(seconds)
     }
     
     // MARK: Button Actions
     
     @objc func startPauseButtonPressed(_ sender: UIButton) {
-        print("test")
+//        print("test")
         if timer.isValid {
          // Timer running
          // ACTION: Change the button’s title to “Continue”
@@ -90,16 +91,17 @@ class ViewController: UIViewController {
          // ACTION: Disable the Reset button
             startPauseButton.setTitle("Pause", for: .normal)
             resetButton.isEnabled = false
-            startTimer()
+            
             
             if currentInterval == 0 && timeRemaining == pomodoroDuration {
                 // We are at the start of a cycle
                 // ACTION: begin the cycle of intervals
-                
+                startNextInterval()
                 
             } else {
                 // We are in the middle of a cycle
                 // ACTION: Resume the timer
+                startTimer()
                 
             }
         }
@@ -167,6 +169,7 @@ class ViewController: UIViewController {
                 let tomatoes = (currentInterval + 2) / 2
                 print("\(tomatoes) tomatoes")
                 updateTomatoes(to: tomatoes)
+
             } else {
                 // Rest break interval
                 timeRemaining = breakDuration
@@ -179,9 +182,9 @@ class ViewController: UIViewController {
             // If all intervals are complete, reset all.
             // ACTION: Post Notification
             resetAll()
-            let till = [1, 2, 4]
+            let sampleArray = [1, 2, 4]
             // This to post the whatever to the specified notification as whatever name
-            NotificationCenter.default.post(name: Notification.Name(FirstViewController.updatePomo), object: till)
+            NotificationCenter.default.post(name: Notification.Name(FirstViewController.updatePomo), object: sampleArray)
 
         }
     }
